@@ -11,9 +11,6 @@ Get the installer for your operating system from the
 - **macOS (Intel)**: the `.dmg` file ending in `x64`
 - **Windows 10 / 11 (64-bit)**: the `.exe` file ending in `setup`
 
-> Linux builds are not published yet. They are planned after the
-> macOS and Windows releases stabilise.
-
 You can ignore every other file in the release (`*.blockmap`, `*.zip`,
 `latest-*.yml`). Those are used by the in-app auto-updater.
 
