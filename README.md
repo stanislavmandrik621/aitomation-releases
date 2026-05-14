@@ -10,7 +10,9 @@ Get the installer for your operating system from the
 - **macOS (Apple Silicon, M1/M2/M3/M4)**: the `.dmg` file ending in `arm64`
 - **macOS (Intel)**: the `.dmg` file ending in `x64`
 - **Windows 10 / 11 (64-bit)**: the `.exe` file ending in `setup`
-- **Linux (64-bit)**: the `.AppImage` file
+
+> Linux builds are not published yet. They are planned after the
+> macOS and Windows releases stabilise.
 
 You can ignore every other file in the release (`*.blockmap`, `*.zip`,
 `latest-*.yml`). Those are used by the in-app auto-updater.
@@ -80,26 +82,6 @@ launch normally afterwards.
 
 ---
 
-## Install on Linux
-
-1. Download the `.AppImage` file.
-2. Make it executable:
-   ```bash
-   chmod +x AItomation-0.1.x-x86_64.AppImage
-   ```
-3. Run it:
-   ```bash
-   ./AItomation-0.1.x-x86_64.AppImage
-   ```
-
-Most distributions will also let you double-click the file from your
-file manager once it has the executable bit set.
-
-> Some minimal distributions need FUSE installed:
-> `sudo apt install libfuse2` (Debian / Ubuntu) or the equivalent.
-
----
-
 ## Updates
 
 AItomation keeps itself up to date in the background. When a new
@@ -121,14 +103,12 @@ from the release page and run it on top of your existing install.
   the Trash.
 - **Windows**: open **Settings**, then **Apps**, then **Installed apps**,
   find **AItomation**, click the **...** menu, then **Uninstall**.
-- **Linux**: delete the `.AppImage` file.
 
 Your local data lives in your user profile and is preserved when you
 uninstall. If you want to wipe it as well:
 
 - **macOS**: `~/Library/Application Support/AItomation`
 - **Windows**: `%APPDATA%\AItomation`
-- **Linux**: `~/.config/AItomation`
 
 ---
 
